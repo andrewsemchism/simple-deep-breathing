@@ -1,0 +1,76 @@
+* {
+  font-family: Poppins;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  height: 8vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container {
+  font-size: 1.5em;
+  flex: 3;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: flex-end;
+  justify-content: space-around;
+  display: flex;
+}
+
+.nav-link {
+  font-size: 1.3em;
+  list-style: none;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breathing-box {
+  display: inline-block;
+  margin: 0 auto;
+  height: 88vmin;
+  width: 88vmin;
+}
+
+.breathing-circle {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: purple;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes pulse{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(0.3);
+  }
+}
+
+.settings-box {
+  height: 1vh;
+  background-color: black;
+}
