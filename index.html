@@ -23,9 +23,27 @@
     <main>
       <div class="breathing-box">
         <div class="breathing-circle"></div>
+        <div class="sidebar">
+          <div class="controls">
+            <div class="breath-in">
+              <div class="control-row">
+                <label for="breath-in-speed">Breath In</label>
+                <input type="number" name="breath-in-speed" value="1" id="breath-in-speed-number">
+              </div>
+              <input type="range" id="breath-in-speed-range" min="1" max="30" value="1">
+            </div>
+            <div class="breath-out">
+              <div class="control-row">
+                <label for="breath-out-speed">Breath Out</label>
+                <input type="number" name="breath-out-speed" value="1" id="breath-out-speed-number">
+              </div>
+              <input type="range" id="breath-out-speed-range" min="1" max="30" value="1">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="settings-box">
-        <img src="/img/settings.svg" alt="settings">
+        <img src="/img/settings.svg" alt="settings" onclick="toggleNav()">
       </div>
     </main>
 
