@@ -93,7 +93,13 @@ main {
   padding: 10px;
 }
 
+.controls h3{
+  padding-left: 10px;
+  font-size: 26px;
+}
+
 .control-row {
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,14 +109,17 @@ input[type=range] {
   width: 100%;
 }
 
-input[type=number] {
+.control-row input[type=number] {
+  flex: 1;
   border: none;
   font-size: 20px;
+  text-align: center;
   background-color: inherit;
 
 }
 
 .control-row label {
+  flex: 3;
   vertical-align: middle;
   font-size: 22px;
 }
