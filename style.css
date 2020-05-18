@@ -106,7 +106,19 @@ main {
 }
 
 input[type=range] {
+  -webkit-appearance: none;
   width: 100%;
+  border-radius: 10px;
+}
+
+input::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ width: 30px;
+ height: 30px;
+ border-radius: 30px;
+ background: lightblue;
+ position: relative;
+ z-index: 3;
 }
 
 .control-row input[type=number] {
@@ -115,7 +127,6 @@ input[type=range] {
   font-size: 20px;
   text-align: center;
   background-color: inherit;
-
 }
 
 .control-row label {

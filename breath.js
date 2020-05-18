@@ -1,8 +1,8 @@
 //selects the breathing-circle class
 const Breathingcircle = document.querySelector('.breathing-circle');
 
-let breathInTime = 1000
-let breathOutTime = 1000
+let breathInTime = 4000
+let breathOutTime = 4000
 
 //breathing-animation class
 function breathAnimation() {
