@@ -59,32 +59,34 @@ main {
 
 .settings-box {
   position: fixed;
-  bottom: 0.5vh;
-  right: 0.5vw;
-  height: 8vmin;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
 }
 
-.settings-box img{
-  max-width:100%;
-  max-height:100%;
-}
-
-.settings-box img:hover {
+.settings-box button{
+  background-color: transparent;
+  font-size: 30px;
   cursor: pointer;
+  border: none;
 }
+
+.settings-box button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
 .show-side-bar {
-  transform: translateX(0) !important;
+  display: block !important;
 }
 
 .sidebar {
-  transition: 0.2s;
-  transform: translateX(100%);
   background-color: rgba(10,10,10,0.1);
   position: absolute;
   right: 0;
   top: 8vh;
-  display: block;
+  display: none;
   width: 100vh;
   max-width: 500px;
   height: 92vh;
