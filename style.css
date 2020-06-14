@@ -33,6 +33,10 @@ nav {
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-link {
   font-size: 1.3em;
   list-style: none;
@@ -50,6 +54,9 @@ main {
   margin: 0 auto;
   height: 88vmin;
   width: 88vmin;
+  opacity: 90%;
+  border-radius: 50%;
+  background-color: #e6f0f2;
 }
 
 .breathing-circle {
