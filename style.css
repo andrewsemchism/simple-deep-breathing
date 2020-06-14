@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+*:focus {
+  outline: none;
+}
+
 header {
   display: flex;
   width: 90%;
